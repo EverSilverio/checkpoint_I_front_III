@@ -15,6 +15,12 @@
    border-radius: .5rem;
 }
 
+.formContainer.formError {
+  border: 1px solid #FF7070;
+  background-color: #221515;
+}
+
+
 .inputs {
    display: flex;
    flex-direction: row;
@@ -26,6 +32,11 @@
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
+}
+
+.formError .buttons input {
+  background-color: rgba(54, 206, 124, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .inputContainer {
@@ -43,10 +54,11 @@
    padding: .6rem 2rem;
    height: 2rem;
    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+   cursor: pointer;
 }
 
 input {
-   height: 1.5rem;
+   height: 2rem;
    background-color: #353535;
    border-radius: .3rem;
    border: none;
