@@ -1,0 +1,79 @@
+.App {
+   display: flex;
+   flex-direction: column;
+   margin: 0 20%;
+   padding-top: 0;
+   min-width: 300px;
+}
+
+.formContainer {
+   display: flex;
+   flex-direction: column;
+   padding: 1.5rem;
+   padding-top: 0;
+   background-color: #1E1E1E;
+   border-radius: .5rem;
+}
+
+.inputs {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   margin-bottom: 1rem;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.inputContainer {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.buttons input {
+   background-color: #36CE7C;
+   font-style: normal;
+   font-weight: 500;
+   color: white;
+   font-size: .6rem;
+   padding: .6rem 2rem;
+   height: 2rem;
+   text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+input {
+   height: 1.5rem;
+   background-color: #353535;
+   border-radius: .3rem;
+   border: none;
+   color: whitesmoke;
+   text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+   padding-left: .5rem;
+}
+
+label {
+   color: rgba(255, 255, 255, 0.6);
+   font-size: .6rem;
+   padding-left: .3rem;
+}
+
+.error {
+   padding-top: .5rem;
+   color: #FF7070;
+   font-size: .6rem;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+   .App {
+      margin: 0;
+   }
+   .inputs {
+      flex-wrap: wrap;
+   }
+}
